@@ -26,9 +26,9 @@ import Data.Ratio ((%))
 -}
 
 myModMask            = mod4Mask          -- changes the mod key to "super"
-myFocusedBorderColor = "#006699"         -- color of focused border
+myFocusedBorderColor = "#00cb00"         -- color of focused border
 myNormalBorderColor  = "#cccccc"         -- color of inactive border
-myBorderWidth        = 0                 -- width of border around windows
+myBorderWidth        = 1                 -- width of border around windows
 myTerminal           = "xterm"           -- which terminal software to use
 myIMRosterTitle      = "Buddy List"      -- title of roster on IM workspace
                                          -- use "Buddy List" for Pidgin, but
@@ -120,7 +120,7 @@ defaultLayouts = smartBorders(avoidStruts(
   -- the available space. Remaining windows tile to both the left and
   -- right of the master window. You can resize using "super-h" and
   -- "super-l".
-  -- ||| ThreeColMid 1 (3/100) (3/4)
+  ||| ThreeColMid 1 (3/100) (1/3)
 
   -- Circle layout places the master window in the center of the screen.
   -- Remaining windows appear in a circle around it

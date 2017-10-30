@@ -69,9 +69,14 @@ dropbox start &
 gnome-settings-daemon &
 unity-settings-deamon &
 gnome-panel &
-export SSH_ASKPASS=/usr/bin/ssh-askpass
-ssh-add </dev/null
+eval "$(ssh-agent)" &
+ssh-add &
+#export SSH_ASKPASS=/usr/bin/ssh-askpass
+#ssh-add < /dev/null
 redshift -l 43:1.44 &
+google-chrome &
+nautilus &
+subl &
 
 # Now, finally, start xmonad
 exec xmonad
